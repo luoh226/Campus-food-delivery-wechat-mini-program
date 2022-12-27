@@ -1,0 +1,19 @@
+<!--pages/request/request.wxml-->
+<view class="title">校园配送小程序</view>
+<view class="page">
+  <view class="section_gap">
+    <text class="item">佣金：</text>
+    <view>
+      <slider bindchange="moneychange" block-size="22" step="1" min="0" max="10" show-value/>
+    </view>
+  </view>
+  <view class="section_gap">
+    <view class="item">配送地址：</view>
+    <input value="{{new_task.places}}" class="address" bindinput="get_address" maxlength="20" placeholder="最大输入长度为20个字符" />
+  </view>
+  <view class="section_gap">
+    <text class="item">手机号码：</text>
+    <input value="{{new_task.phonenumber}}" class="address" bindinput="get_phonenumber" type="digit" maxlength="11" placeholder="请输入11位中国大陆手机号" />
+  </view>
+  <button type="primary" bindtap="add_task" size="default">发布</button>
+</view>

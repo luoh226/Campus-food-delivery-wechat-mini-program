@@ -1,0 +1,29 @@
+/* pages/request/request.wxss */
+page{
+  background-color: #F8F8F8;
+}
+
+.title{
+  background-color: #C0F60E;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  border-bottom: solid;
+}
+
+.section_gap{
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  /* border-style: solid; */
+}
+
+.item{
+  font-size: 18px;
+  margin: 5px;
+}
+
+.address{
+  margin: 20px 0 10px 0;
+}
